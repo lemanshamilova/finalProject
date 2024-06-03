@@ -1,0 +1,71 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0px;
+}
+.banner-image{
+    .image{
+        img{
+            height: 700px;
+        }
+    }
+}
+.content{
+    .trekerImage{
+        img{
+            width: 550px;
+        }
+    }
+   
+}
+.innerText{
+    position: relative;
+    padding: 0px 30px;
+    top: -130px;
+    .top{
+        font-size: 38px;
+        
+
+    }
+    .margin{
+        font-size: 70px;
+    }
+}
+.image{
+    position: relative;
+    animation: moveUpDown 4s infinite;
+   
+}
+@keyframes moveUpDown {
+    0% {
+        top: -90px;
+    }
+    50% {
+        top: -50px;
+    }
+    100% {
+        top: -90px;
+
+        
+    }
+}
+.btn{
+    margin-top: 40px;
+    button{
+       padding: 13px 30px;
+        font-size: 20px;
+        border: 2px solid #1dc5ce;
+        color: #1dc5ce;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        
+    }
+}
+.btn button:hover{
+    background-color: #1dc5ce;
+    color: white;
+    transition: 0.6s;
+    
+    
+}

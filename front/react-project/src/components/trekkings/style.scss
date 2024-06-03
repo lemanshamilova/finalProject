@@ -1,0 +1,85 @@
+.trekking{
+    background-image: url("https://themeim.com/demo/treker/images/background/image-1.jpg");
+    height: 1200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+    
+}
+.text{
+    text-align: center;
+    padding: 60px 0px;
+    h1{
+        color: #1dc5ce;
+        font-family: 'dancing script';
+        font-size: 30px;
+    }
+    h2{
+        font-size: 60px;
+        max-width: 400px;
+        margin:0 auto;
+        padding: 20px 0px;
+        font-weight: 800;
+    }
+}
+.trekkings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.trekkingsCart{
+    background-color: white;
+    padding: 25px ;
+    border-radius: 10px;
+    max-width: 350px;
+   
+    img{
+        width: 300px;
+        height: 280px;
+        border-radius: 10px;
+       
+
+    }
+    .title{
+        font-size: 25px;
+        max-width: 300px;
+        font-weight: 600;
+    }
+    .starts{
+        font-size: 23px;
+        padding: 15px 0px;
+        color: rgb(229, 179, 27);
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .hr{
+        border: 1px dashed rgb(179, 175, 175);
+        margin-top: 30px;
+       
+    }
+}
+.details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+    width: fit-content;
+    font-size: 14px;
+    
+}
+.details:hover{
+    color: #1dc5ce;
+    transition: 0.2s;
+    
+   
+}
+.price{
+    position: relative;
+}
