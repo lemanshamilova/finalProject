@@ -6,6 +6,16 @@ import { CiStar } from "react-icons/ci";
 import mountains from '../../assets/images/logo-icon.svg'
 import { useNavigate } from 'react-router-dom';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import {  Navigation ,Autoplay} from 'swiper/modules';
 
 
 const Trekkings = () => {
@@ -25,11 +35,39 @@ const Trekkings = () => {
          <h1>Müasir Və Gözəl</h1>
           <h2>Ən Populyar Trekkingimiz</h2>
          </div>
-         <div className='trekkings'>
+         <Swiper
+         breakpoints={{
+          400:{slidesPerView:1},
+          700:{slidesPerView:2},
+          1100:{slidesPerView:3},
+          1200:{slidesPerView:4},
+
+         }}
+
+        
+        modules={[Navigation,Autoplay]}
+
+         autoplay={{
+          delay:1,
+          disableOnInteraction:false
+         }}
+         spaceBetween={30}
+         loop={true}
+
+         pagination={{
+          clickable:true
+         }}
+         speed={4000}
+
+
+         
+      
+        
+        className=" trekkings">
           {
             trekkings.map((p)=>(
-              <div className='trekkingsCart' key={p._id}>
-                <p className='price'>{p.price} dollar</p>
+              <SwiperSlide className='trekkingsCart' key={p._id}>
+                <p className='price'>${p.price}</p>
                 <img src={p.image} />
                 <p className='title'>{p.title}</p>
                <div className='starts'>
@@ -46,17 +84,17 @@ const Trekkings = () => {
 
                <p onClick={(e)=>{
                 e.preventDefault()
-                navigate(`${p._id}`)
+                navigate(`/trekkings/${p._id}`)
 
                }} className='details'>Təfərrüatlara baxın  <img style={{width:'30px',height:'30px'}} src={mountains}/></p>
 
 
-              </div>
+              </SwiperSlide>
 
             ))
 
           }
-         </div>
+         </Swiper>
         </div>
 
       </div>

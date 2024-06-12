@@ -38,3 +38,13 @@
 
     }
 }
+@media only screen and (max-width: 598px){
+    .left-side{
+        display: none;
+    }
+    .right-side{
+        display: flex;
+        
+        align-items: center;
+    }
+}

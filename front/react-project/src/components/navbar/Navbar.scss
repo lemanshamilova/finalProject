@@ -8,7 +8,7 @@
 }
 
 .nav{
-    height: 150px;
+    height: 100px;
 
     display: flex;
     align-items: center;
@@ -44,6 +44,43 @@
         position: relative;
         right: 20px;
         top: -13px;
+    }
+
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width: 1300px){
+   
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 50px;
+        padding: 10px;
+    }
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+
+}
+@media only screen and (max-width: 598px){
+   
+    .nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        font-size: 50px;
+        padding: 10px;
+    }
+    .search{
+        display: none;
+    }
+    .wish{
+        display: none;
     }
 
 }

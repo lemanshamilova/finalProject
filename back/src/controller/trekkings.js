@@ -12,7 +12,7 @@ const postData = async (req, res) => {
   res.send("succes");
 };
 const getById = async (req, res) => {
-  const getElem = await Trekkings.find({ _id: req.params.id });
+  const getElem = await Trekkings.findById({ _id: req.params.id });
   res.send(getElem);
 };
 

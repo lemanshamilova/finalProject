@@ -14,7 +14,12 @@ const cors = require('cors')
 app.use(cors())
 
 const router=require("./src/router/router")
+
 app.use("/",router)
+
+const productRouter = require('./src/router/product.js')
+app.use("/",productRouter)
+
 
 
 

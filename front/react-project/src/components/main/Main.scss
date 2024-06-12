@@ -69,3 +69,202 @@
     
     
 }
+@media only screen and (max-width: 1300px){
+    .main{
+        display: flex;
+        gap: 5px;
+       
+        .image{
+            img{
+                width: 500px;
+                height: 600px;
+            }
+        }
+    }
+    .content{
+        .trekerImage{
+            img{
+                width: 450px;
+            }
+        }
+       
+    }
+    .innerText{
+        position: relative;
+        padding: 0px 30px;
+        top: -130px;
+        .top{
+            font-size: 30px;
+            
+    
+        }
+        .margin{
+            font-size: 50px;
+        }
+    }
+   
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .btn{
+        margin-top: 30px;
+        button{
+           padding: 10px 25px;
+            font-size: 16px;
+            border: 2px solid #1dc5ce;
+            color: #1dc5ce;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            
+        }
+    }
+}
+@media only screen and (max-width: 950px){
+    .main{
+        display: flex;
+        gap: 5px;
+       
+        .image{
+            img{
+                width: 350px;
+                height: 450px;
+            }
+        }
+    }
+    .container{
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    .content{
+        .trekerImage{
+            img{
+                width: 400px;
+            }
+        }
+       
+    }
+    .innerText{
+        position: relative;
+        padding: 0px 30px;
+        top: -130px;
+        .top{
+            font-size: 25px;
+            
+    
+        }
+        .margin{
+            font-size: 40px;
+        }
+    }
+    .btn{
+        margin-top: 27px;
+        button{
+           padding: 6px 19px;
+            font-size: 16px;
+            border: 2px solid #1dc5ce;
+            color: #1dc5ce;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .main{
+        display: flex;
+        gap: 5px;
+        text-align: center;
+       
+        .image{
+           display: none;
+        }
+    }
+    .container{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .content{
+        .trekerImage{
+            img{
+                max-width: 350px;
+            }
+        }
+       
+    }
+    .innerText{
+        position: relative;
+        padding: 0px 30px;
+        top: -130px;
+        .top{
+            font-size: 25px;
+            
+    
+        }
+        .margin{
+            font-size: 40px;
+        }
+    }
+    .btn{
+        margin-top: 27px;
+        button{
+           padding: 6px 19px;
+            font-size: 16px;
+            border: 2px solid #1dc5ce;
+            color: #1dc5ce;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            
+        }
+    }
+}
+@media only screen and (max-width: 598px){
+    .main{
+        display: flex;
+        gap: 5px;
+        text-align: center;
+       
+        .image{
+           display: none;
+        }
+    }
+   
+    .content{
+        .trekerImage{
+            img{
+                max-width: 250px;
+            }
+        }
+       
+    }
+    .innerText{
+        position: relative;
+        padding: 0px 30px;
+        top: -130px;
+        .top{
+            font-size: 20px;
+            
+    
+        }
+        .margin{
+            font-size: 35px;
+        }
+    }
+    .btn{
+        margin-top: 27px;
+        button{
+           padding: 6px 10px;
+            font-size: 16px;
+            border: 2px solid #1dc5ce;
+            color: #1dc5ce;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            
+        }
+    }
+
+}

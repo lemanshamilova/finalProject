@@ -1,85 +1,174 @@
-.trekking{
-    background-image: url("https://themeim.com/demo/treker/images/background/image-1.jpg");
-    height: 1200px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 100px;
+.trekking {
+  background-image: url("https://themeim.com/demo/treker/images/background/image-1.jpg");
+  height: 1200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.text {
+  text-align: center;
+  padding: 60px 0px;
+  h1 {
+    color: #1dc5ce;
+    font-family: "dancing script";
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 60px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    font-weight: 800;
+  }
+}
+.trekkings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.trekkingsCart {
+  background-color: white;
+  padding: 0px 30px 0px 27px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
+  height: 650px;
+
+  img {
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 25px;
+    max-width: 300px;
+    font-weight: 600;
+    height: 70px;
+  }
+  .starts {
+    font-size: 23px;
+    padding: 15px 0px;
+    color: rgb(229, 179, 27);
+    height: 50px;
+  }
+  .desc {
+    font-size: 14px;
+    height: 100px;
+  }
+  .hr {
+    border: 1px dashed rgb(179, 175, 175);
+    margin-top: 30px;
     
+  }
 }
-.text{
-    text-align: center;
-    padding: 60px 0px;
-    h1{
-        color: #1dc5ce;
-        font-family: 'dancing script';
-        font-size: 30px;
-    }
-    h2{
-        font-size: 60px;
-        max-width: 400px;
-        margin:0 auto;
-        padding: 20px 0px;
-        font-weight: 800;
-    }
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 20px;
+  width: fit-content;
+  font-size: 14px;
+  
 }
-.trekkings{
+.details:hover {
+  color: #1dc5ce;
+  transition: 0.2s;
+}
+.price {
+  position: relative;
+  background-color: #1dc5ce;
+  max-width: 80px;
+  position: relative;
+  top: 50px;
+  color: white;
+  text-align: center;
+  left: 17px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .trekkings {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-}
-.trekkingsCart{
-    background-color: white;
-    padding: 25px ;
-    border-radius: 10px;
-    max-width: 350px;
-   
-    img{
-        width: 300px;
-        height: 280px;
-        border-radius: 10px;
-       
+  }
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 
-    }
-    .title{
-        font-size: 25px;
-        max-width: 300px;
-        font-weight: 600;
-    }
-    .starts{
-        font-size: 23px;
-        padding: 15px 0px;
-        color: rgb(229, 179, 27);
-    }
-    .desc{
-        font-size: 14px;
-    }
-    .hr{
-        border: 1px dashed rgb(179, 175, 175);
-        margin-top: 30px;
-       
-    }
 }
-.details{
+@media only screen and (max-width: 950px){
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .trekkings {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 5px;
-    margin-top: 20px;
-    width: fit-content;
-    font-size: 14px;
+    justify-content: center;
     
+  }
+  .text {
+    text-align: center;
+    padding: 60px 0px;
+    h1 {
+      color: #1dc5ce;
+      font-family: "dancing script";
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 50px;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 15px 0px;
+      font-weight: 800;
+    }
+  }
+
 }
-.details:hover{
-    color: #1dc5ce;
-    transition: 0.2s;
-    
-   
-}
-.price{
-    position: relative;
+@media only screen and (max-width: 598px){
+  .text {
+    text-align: center;
+    padding: 50px 0px;
+    h1 {
+      color: #1dc5ce;
+      font-family: "dancing script";
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 40px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 15px 0px;
+      font-weight: 800;
+    }
+  }
+  .trekkingsCart {
+    background-color: white;
+    padding: 0px 30px 0px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  
+    height: 650px;
+  
+    img {
+      width: 230px;
+      height: 280px;
+      border-radius: 10px;
+    }
+  }
 }

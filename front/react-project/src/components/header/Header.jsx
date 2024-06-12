@@ -4,7 +4,10 @@ import { FaCircleUser } from "react-icons/fa6";
 import { FaGlobeAfrica } from "react-icons/fa";
 import { GoChevronDown } from "react-icons/go";
 import "./Header.scss";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header>
       <div className="header">
@@ -20,21 +23,23 @@ const Header = () => {
             </div>
             <div className="right-side">
               <div className="language">
-                
-                  <FaGlobeAfrica />
-                  <p>ENG</p>
-                  <GoChevronDown />
-                
+                <FaGlobeAfrica />
+                <p>ENG</p>
+                <GoChevronDown />
               </div>
               <div className="signIn">
-                <FaCircleUser />
-                <p>SIGN IN</p>
+                <FaCircleUser/>
+                <p
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigate(`/login`)
+                  }}
+                >
+                  SIGN IN
+                </p>
               </div>
             </div>
           </div>
-         
-
-
         </div>
       </div>
     </header>
