@@ -1,8 +1,7 @@
 .loginPage {
-  background-image: url("https://themeim.com/demo/treker/images/background/newsletter-bg.png");
+  background-image: url(../../assets//images/newsletter-bg.png);
   height: 100vh;
   background-position: center;
-
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,12 +48,13 @@ padding: 40px 0px;
   }
 }
 .loginBtn {
-  padding: 13px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 16px;
   border-radius: 10px;
   background-color: #1b1a1c;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .leftSide {
 

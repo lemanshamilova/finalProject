@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
-
+import loginImg from '../../assets/images/about-image-3.svg'
 const Login = () => {
   const navigate=useNavigate()
   return (
@@ -14,7 +14,7 @@ const Login = () => {
             <div className="leftSide">
               <img
                 
-                src="https://themeim.com/demo/treker/images/resource/about-image-3.svg"
+                src={loginImg}
                
               />
             </div>

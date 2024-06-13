@@ -13,37 +13,28 @@ import ProductPage from "./pages/productPage/ProductPage";
 function App() {
   return (
     <>
-    <Routes>
-    <Route path="/login" element={<Login />} />
-    <Route path="/register" element={<Register />} />
-    <Route path="*" element={<LayoutWithNavbar />} />
-
-
-
-    </Routes>
-     
-     
-
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="*" element={<LayoutWithNavbar />} />
+      </Routes>
     </>
   );
-
 }
 function LayoutWithNavbar() {
   return (
     <>
-     <Header />
-     <Navbar />
-     <Routes>
+      <Header />
+      <Navbar />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/trekkings" element={<TrekkingPage />} />
         <Route path="/products" element={<ProductPage />} />
-        <Route path="/products/:productId" element={<ProductDetails/>} />
-        <Route path="/trekkings/:trekkingId" element={<TrekkingDetails/>} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
+        <Route path="/trekkings/:trekkingId" element={<TrekkingDetails />} />
       </Routes>
-
-
     </>
-  )
+  );
 }
 
 export default App;
