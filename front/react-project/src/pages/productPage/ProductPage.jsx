@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 import { AiFillHome } from "react-icons/ai";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
+import { getAllProducts } from "../../redux/slices/ProductSlice";
 
 const ProductPage = () => {
   const products = useSelector((state) => state.products.products);
   const dispatch = useDispatch();
 
-  
+
   useEffect(() => {
     dispatch(getAllProducts());
   }, []);
