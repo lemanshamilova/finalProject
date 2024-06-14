@@ -2,6 +2,8 @@ import React from "react";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
 import registerImg from '../../assets/images/faq-image-1.svg'
+import { HiArrowNarrowLeft } from "react-icons/hi";
+
 const Register = () => {
   const navigate=useNavigate()
   return (
@@ -34,8 +36,15 @@ const Register = () => {
 
             </form>
           </div>
+
         </div>
       </div>
+      <div className="returnHome" onClick={()=>{
+        navigate("/")
+       }}>
+       <HiArrowNarrowLeft /> 
+       <p>Home</p>
+       </div>
     </div>
   </section>
   );

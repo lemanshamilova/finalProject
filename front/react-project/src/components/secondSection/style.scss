@@ -93,7 +93,10 @@
   }
 }
 @media only screen and (max-width: 950px){
-
+  .secondBox {
+    display: flex;
+    justify-content: space-around;
+  }
 
     .container {
         max-width:950px;
@@ -132,15 +135,16 @@
         max-width: 250px;
       
         h1 {
-          font-size: 20px;
+          font-size: 17px;
           color: #1dc5ce;
           font-family: "dancing script";
           padding: 12px 0px;
         }
         h2 {
-          font-size: 35px;
+          font-size: 25px;
         }
         p {
+          font-size: 14px;
           padding: 25px 0px;
         }
       }
@@ -183,24 +187,28 @@
             }
           }
           .rightBox {
+            position: relative;
             max-width: 100%;
             text-align: center;
           
             h1 {
-              font-size: 40px;
+              font-size: 25px;
               color: #1dc5ce;
               font-family: "dancing script";
               padding: 12px 0px;
             }
             h2 {
-              font-size: 55px;
+              font-size: 25px;
             }
             p {
               padding: 25px 0px;
+              font-size: 17px;
+
             }
           }
           .secondBox {
-            display: block;
+            display: flex;
+            flex-direction: column;
             
             height: 100%;
           }

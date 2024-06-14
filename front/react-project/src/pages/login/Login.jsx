@@ -2,6 +2,8 @@ import React from "react";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
 import loginImg from '../../assets/images/about-image-3.svg'
+import { HiArrowNarrowLeft } from "react-icons/hi";
+
 const Login = () => {
   const navigate=useNavigate()
   return (
@@ -34,6 +36,12 @@ const Login = () => {
             </div>
           </div>
         </div>
+       <div className="returnHome" onClick={()=>{
+        navigate("/")
+       }}>
+       <HiArrowNarrowLeft /> 
+       <p>Home</p>
+       </div>
       </div>
     </section>
   );
