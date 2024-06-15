@@ -5,7 +5,7 @@
     gap: 50px;
 }
 .trekkingsPageCart {
-    background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 0px 30px 0px 27px;
     border-radius: 10px;
     display: flex;
@@ -70,4 +70,37 @@
     border-radius: 5px;
     font-size: 25px;
   }
+  .head-Trekking{
+   padding: 50px 0px;
+   text-align: center;
+   max-width: 900px;
+   margin: auto;
+   h1{
+    font-size: 50px;
+    padding: 10px 0px;
+    font-weight: 800;
+
+   }
+   .forFilter{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 10px;
+   
+  
+   button{
+    padding: 13px 18px;
+    background-color:#1dc5ce;
+    border: none;
+    font-size: 17px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+   }
+   }
+  }
+ 
+
+    
   

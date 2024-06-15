@@ -3,6 +3,7 @@ import "./style.scss";
 import { useNavigate } from "react-router-dom";
 import loginImg from '../../assets/images/about-image-3.svg'
 import { HiArrowNarrowLeft } from "react-icons/hi";
+import { SlArrowRight } from "react-icons/sl";
 
 const Login = () => {
   const navigate=useNavigate()
@@ -23,11 +24,11 @@ const Login = () => {
             <div className="rightSide">
               <form>
                
-                <label>Username</label>
+                <label>Username <span style={{color:"#1dc5ce"}}>*</span></label>
                 <input type="text" placeholder="Username" />
-                <label>Password</label>
+                <label>Password <span style={{color:"#1dc5ce"}}>*</span></label>
                 <input type="text" placeholder="Password" />
-                <button className="loginBtn">Login</button>
+                <button className="loginBtn">Login <SlArrowRight style={{fontSize:"11px",fontWeight:"800"}}/>                </button>
                 <p >Don't have an account ?<span onClick={()=>{
                   navigate(`/register`)
                 }}  style={{color:"red",cursor:"pointer",textDecoration:"underline"}}>  Register</span> </p>
