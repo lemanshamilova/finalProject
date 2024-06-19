@@ -41,7 +41,7 @@ const Home = () => {
         <section>
           <div className="container">
             <div className="main">
-              <div className="content">
+              <div className="content-home">
                 <div className="trekerImage">
                   <img src={Treker} />
                 </div>

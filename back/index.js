@@ -1,28 +1,28 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const mongoose = require("mongoose");
+const dotenv = require("dotenv").config();
+const cors = require("cors");
 
+const authRoutes=require("./routes/auth.js")
 
-require('dotenv').config()
-const port = process.env.PORT || 3000
+app.use(cors());
+app.use(express.json());
+app.use(express.static("public"));
 
-require("./src/config/db")
+//*ROUTES
+app.use("/auth",authRoutes)
 
-const bodyParser = require('body-parser')
-app.use(bodyParser.json())
+//*MONGOOSE SETUP
 
-const cors = require('cors')
-app.use(cors())
-
-const router=require("./src/router/router")
-
-app.use("/",router)
-
-const productRouter = require('./src/router/product.js')
-app.use("/",productRouter)
-
-
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+const PORT = 5050;
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    dbName:"Dream_Nest",
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    app.listen(PORT, () => console.log("Server PORT:", PORT));
+  })
+  .catch((err) => console.log(err, "did not connect"));
