@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import BannerImage from "../../assets/images/banner-image-1.svg";
 import Treker from "../../assets/images/banner-bg-text.svg";
 import mountains from "../../assets/images/logo-icon.svg";
 import backImg from "../../assets/images/about-vector-1.png";
 import frontImg from "../../assets/images/about-image-2.svg";
-import { useSelector, useDispatch } from "react-redux";
-import { getAllData } from "../../redux/slices/TrekkingSlice";
-import { CiStar } from "react-icons/ci";
+// import { useSelector, useDispatch } from "react-redux";
+// import { getAllData } from "../../redux/slices/TrekkingSlice";
+// import { CiStar } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -20,21 +20,21 @@ import reserv from '../../assets/images/reserv.svg'
 import users from '../../assets/images/users.svg'
 import bags from '../../assets/images/bags.svg'
 import image from '../../assets/images/why-image-1.svg'
-import { getAllProducts } from '../../redux/slices/ProductSlice'
-import { MdFavoriteBorder } from "react-icons/md";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+// import { getAllProducts } from '../../redux/slices/ProductSlice'
+// import { MdFavoriteBorder } from "react-icons/md";
+// import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Home.scss";
 
 const Home = () => {
-  const products = useSelector((state) => state.products.products)
-  const trekkings = useSelector((state) => state.trekkings.trekkings);
-  const dispatch = useDispatch();
+  // const products = useSelector((state) => state.products.products)
+  // const trekkings = useSelector((state) => state.trekkings.trekkings);
+  // const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    dispatch(getAllData());
-    dispatch(getAllProducts());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(getAllData());
+  //   dispatch(getAllProducts());
+  // }, []);
   return (
     <>
       <>
@@ -128,7 +128,7 @@ const Home = () => {
                 speed={4000}
                 className=" trekkings"
               >
-                {trekkings.map((p) => (
+                {/* {trekkings.map((p) => (
                   <SwiperSlide className="trekkingsCart" key={p._id}>
                     <p className="price">${p.price}</p>
                     <img src={p.image} />
@@ -159,7 +159,7 @@ const Home = () => {
                       />
                     </p>
                   </SwiperSlide>
-                ))}
+                ))} */}
               </Swiper>
             </div>
           </div>
@@ -220,7 +220,7 @@ const Home = () => {
                     <h1>İndi Alış-Veriş Edin</h1>
                     <h2>Seçilmiş Trekking Məhsulları</h2>
                     <div className="products">
-                        {products.slice(0,8).map((p)=>(
+                        {/* {products.slice(0,8).map((p)=>(
                             <div className='product' key={p._id}>
 
                                 <img src={p.image}/>
@@ -243,7 +243,7 @@ const Home = () => {
 
 
                             </div>
-                        ))}
+                        ))} */}
 
                     </div>
 

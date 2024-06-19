@@ -1,6 +1,6 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+// import axios from "axios";
+import React from "react";
+// import { useParams } from "react-router-dom";
 import "./style.scss";
 import { AiFillHome } from "react-icons/ai";
 import { FaChevronCircleRight } from "react-icons/fa";
@@ -9,17 +9,17 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoMdHeartEmpty } from "react-icons/io";
 
 const ProductDetails = () => {
-  const { productId } = useParams();
-  const [product, setProduct] = useState([]);
+  // const { productId } = useParams();
+  // const [product, setProduct] = useState([]);
 
-  const getProduct = async () => {
-    const res = await axios(`http://localhost:5050/products/${productId}`);
-    setProduct(res.data);
-    console.log(res.data);
-  };
-  useEffect(() => {
-    getProduct();
-  }, []);
+  // const getProduct = async () => {
+  //   const res = await axios(`http://localhost:5050/products/${productId}`);
+  //   setProduct(res.data);
+  //   console.log(res.data);
+  // };
+  // useEffect(() => {
+  //   getProduct();
+  // }, []);
 
   return (
     <section>
@@ -42,11 +42,11 @@ const ProductDetails = () => {
 
       <div className="container">
         <div className="productDetail">
-          <div className="productImg"><img src={product.image} /></div>
+          {/* <div className="productImg"><img src={product.image} /></div> */}
           <div>
             <div className="stock">Stokda</div>
 
-            <h1>{product.title}</h1>
+            {/* <h1>{product.title}</h1> */}
             <div className="starts">
               <CiStar />
               <CiStar />
@@ -54,7 +54,7 @@ const ProductDetails = () => {
               <CiStar />
               <CiStar />
             </div>
-            <h3>${product.price}.00</h3>
+            {/* <h3>${product.price}.00</h3> */}
             <p className="info">
               2014-cü ildən bəri biz hər yaşda olan 500.000-dən çox insana
               həyatlarının ən yaxşı açıq hava təcrübəsindən zövq almağa kömək

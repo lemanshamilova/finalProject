@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaGlobeAfrica } from "react-icons/fa";
 import { GoChevronDown } from "react-icons/go";
 import "./Header.scss";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { setLogout } from "../../redux/slices/state";
 const Header = () => {
+  const [dropdownMenu, setDropdownMenu] = useState(false);
+  const user = useSelector((state) => state.user);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   return (
     <header>
@@ -28,15 +34,28 @@ const Header = () => {
                 <GoChevronDown />
               </div>
               <div className="signIn">
-                <FaCircleUser/>
-                <p
-                  style={{ cursor: "pointer" }}
-                  onClick={() => {
-                    navigate(`/login`)
-                  }}
-                >
-                  SIGN IN
-                </p>
+                {user ? <a href="/create-listing"></a> : <a href="/login"></a>}
+                <div className="userPanel">
+                  <RxHamburgerMenu className="menu"/>
+                  {!user ? (
+                    <FaCircleUser style={{fontSize:"30px"}}/>
+                  ) : (
+                    <img
+                      src={`http://localhost:5050/${user.profileImagePath.replace(
+                        "public",
+                        ""
+                      )}`}
+                      alt="profile photo"
+                      style={{
+                        objectFit: "cover",
+                        borderRadius: "50%",
+                        width: "30px",
+                        height: "30px"
+                      }}
+                    />
+                  )}
+                </div>
+               
               </div>
             </div>
           </div>

@@ -47,19 +47,13 @@
     }
 
 }
-.menu{
-    display: none;
-}
+
 @media only screen and (max-width: 1300px){
    
     .nav ul{
         display: none;
     }
-    .menu{
-        display: block;
-        font-size: 50px;
-        padding: 10px;
-    }
+  
     .container{
         max-width: 1300px;
         margin: 0 auto;
@@ -71,11 +65,7 @@
     .nav ul{
         display: none;
     }
-    .menu{
-        display: block;
-        font-size: 50px;
-        padding: 10px;
-    }
+ 
     .search{
         display: none;
     }

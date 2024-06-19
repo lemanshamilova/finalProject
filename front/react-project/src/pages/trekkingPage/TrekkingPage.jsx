@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { FaChevronCircleRight } from "react-icons/fa";
 import "./style.scss";
-import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllData } from "../../redux/slices/TrekkingSlice";
-import { CiStar } from "react-icons/ci";
-import mountains from "../../assets/images/logo-icon.svg";
+// import { useNavigate } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getAllData } from "../../redux/slices/TrekkingSlice";
+// import { CiStar } from "react-icons/ci";
+// import mountains from "../../assets/images/logo-icon.svg";
 
 
 
@@ -16,14 +16,14 @@ const TrekkingPage = () => {
 
 
 
-  const trekkings = useSelector((state) => state.trekkings.trekkings);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const trekkings = useSelector((state) => state.trekkings.trekkings);
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate();
  
 
-  useEffect(() => {
-    dispatch(getAllData());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(getAllData());
+  // }, []);
   return (
     <section>
       <div className="background">
@@ -62,7 +62,7 @@ const TrekkingPage = () => {
           </div>
         </section>
         <div className="trekkingsPage">
-          {trekkings.map((p) => (
+          {/* {trekkings.map((p) => (
             <div className="trekkingsPageCart" key={p._id}>
               <p className="price">${p.price}</p>
               <img src={p.image} />
@@ -93,7 +93,7 @@ const TrekkingPage = () => {
                 />
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
         <div className="aboutTrekking">
        

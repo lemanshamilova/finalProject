@@ -1,11 +1,44 @@
-import { configureStore } from '@reduxjs/toolkit'
-import TrekkingReducer from '../slices/TrekkingSlice'
-import ProductReducer from '../slices/ProductSlice'
+// import { configureStore } from '@reduxjs/toolkit'
+// import TrekkingReducer from '../slices/TrekkingSlice'
+// import ProductReducer from '../slices/ProductSlice'
 
+// export const store = configureStore({
+//   reducer: {
+//     trekkings: TrekkingReducer,
+//     products:ProductReducer
+//   },
+// })
+
+import { configureStore } from "@reduxjs/toolkit";
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import state from "../slices/state";
+
+const persistConfig = {
+  key: "root",
+  version: 1,
+  storage,
+};
+
+const persistedReducer = persistReducer(persistConfig, state);
 
 export const store = configureStore({
-  reducer: {
-    trekkings: TrekkingReducer,
-    products:ProductReducer
-  },
-})
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
+
+export let persistor = persistStore(store);
