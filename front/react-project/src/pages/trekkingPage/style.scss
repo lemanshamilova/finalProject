@@ -100,7 +100,36 @@
    }
    }
   }
- 
+ .heading-aboutTrekking{
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0px;
+ }
 
-    
-  
+ .aboutTrekking{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+ }   
+ .image-trekking{
+  position: relative;
+  animation: moveUpDownTrekking 4s infinite;
+ 
+}
+@keyframes moveUpDownTrekking {
+  0% {
+      top: -10px;
+  }
+  50% {
+      top: 40px;
+  }
+  100% {
+      top: -10px;
+
+      
+  }
+}

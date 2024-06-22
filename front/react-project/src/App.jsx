@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import TrekkingPage from "./pages/trekkingPage/TrekkingPage";
 import ProductPage from "./pages/productPage/ProductPage";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<LayoutWithNavbar />} />
       </Routes>
+      
     </>
   );
 }
@@ -33,6 +35,7 @@ function LayoutWithNavbar() {
         <Route path="/products/:productId" element={<ProductDetails />} />
         <Route path="/trekkings/:trekkingId" element={<TrekkingDetails />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

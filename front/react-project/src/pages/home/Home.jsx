@@ -6,7 +6,7 @@ import backImg from "../../assets/images/about-vector-1.png";
 import frontImg from "../../assets/images/about-image-2.svg";
 // import { useSelector, useDispatch } from "react-redux";
 // import { getAllData } from "../../redux/slices/TrekkingSlice";
-// import { CiStar } from "react-icons/ci";
+import { CiStar } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,9 +21,12 @@ import users from '../../assets/images/users.svg'
 import bags from '../../assets/images/bags.svg'
 import image from '../../assets/images/why-image-1.svg'
 // import { getAllProducts } from '../../redux/slices/ProductSlice'
-// import { MdFavoriteBorder } from "react-icons/md";
-// import { AiOutlineShoppingCart } from "react-icons/ai";
+import { MdFavoriteBorder } from "react-icons/md";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Home.scss";
+import { News } from "../../../data/data";
+import { trekkings } from "../../../data/data";
+import { products } from "../../../data/data";
 
 const Home = () => {
   // const products = useSelector((state) => state.products.products)
@@ -128,8 +131,8 @@ const Home = () => {
                 speed={4000}
                 className=" trekkings"
               >
-                {/* {trekkings.map((p) => (
-                  <SwiperSlide className="trekkingsCart" key={p._id}>
+                {trekkings.map((p,i) => (
+                  <SwiperSlide className="trekkingsCart" key={i}>
                     <p className="price">${p.price}</p>
                     <img src={p.image} />
                     <p className="title">{p.title}</p>
@@ -159,7 +162,7 @@ const Home = () => {
                       />
                     </p>
                   </SwiperSlide>
-                ))} */}
+                ))}
               </Swiper>
             </div>
           </div>
@@ -220,8 +223,8 @@ const Home = () => {
                     <h1>İndi Alış-Veriş Edin</h1>
                     <h2>Seçilmiş Trekking Məhsulları</h2>
                     <div className="products">
-                        {/* {products.slice(0,8).map((p)=>(
-                            <div className='product' key={p._id}>
+                        {products.slice(0,8).map((p,i)=>(
+                            <div className='product' key={i}>
 
                                 <img src={p.image}/>
                                 <p className='title'>{p.title}</p>
@@ -243,7 +246,7 @@ const Home = () => {
 
 
                             </div>
-                        ))} */}
+                        ))}
 
                     </div>
 
@@ -251,6 +254,26 @@ const Home = () => {
             </div>
         </div>
       
+    </section>
+    <section className="trekerNews_bg">
+      <div className="container">
+        <div className="trekerNews">
+          <div className="trekerNews_text">
+            <h1>Treker Top Xəbərləri</h1>
+            <h2>Treker Son Xəbərlər</h2>
+          </div>
+          <div className="trekerNews_box">
+            {News?.map((item,index)=>(
+              <div className="trekerNews_boxes" key={index}>
+                <p style={{color:"gray"}}>By : {item?.author}</p>
+                <h3 >{item?.name}</h3>
+                <p>{item?.description}</p>
+
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
       </>
     </>

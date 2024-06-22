@@ -12,10 +12,18 @@
 .menu{
     font-size: 30px;
 }
+.creater{
+    text-decoration: none;
+    color: white;
+}
+.creater:hover{
+    color: rgb(235, 237, 239);
+}
 .userPanel{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+
 }
 .left-side{
     display: flex;
@@ -27,6 +35,35 @@
     color: white;
 
     }
+}
+.dropdownMenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 42px;
+    right: 10px;
+    z-index: 1765876978087675754;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    a{
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        color: #024548;
+        font-weight: 500;
+
+
+        
+    }
+    
+}
+.dropdownMenu a:hover{
+    color: rgb(199, 50, 4);
+    background-color: rgb(235, 237, 239);
+}
+.menuIcon:hover{
+color: rgb(235, 237, 239);
 }
 .right-side{
     display: flex;
@@ -43,6 +80,7 @@
         display: flex;
         gap: 10px;
     align-items: center;
+    
 
     }
 }

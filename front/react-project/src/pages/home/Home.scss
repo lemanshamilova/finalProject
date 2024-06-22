@@ -36,6 +36,55 @@
     animation: moveUpDown 4s infinite;
    
 }
+.trekerNews_bg{
+  background-image: url(../../assets/images/image-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.trekerNews{
+  
+  .trekerNews_text{
+    text-align: center;
+
+    h1{
+      font-size: 30px;
+      font-family:Dancing script;
+      color: #1dc5ce;
+    }
+    h2{
+      font-size: 45px;
+      margin-top: 20px;
+    }
+  }
+  .trekerNews_box{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+    gap: 30px;
+    .trekerNews_boxes{
+      background-color: white;
+      h3{
+        padding: 15px 0px;
+      }
+      
+      border: 1px solid #1dc5ce;
+      max-width: 400px;
+      padding: 40px 20px;
+      border-radius: 15px;
+     
+    
+    }
+  }
+}
+.trekerNews_boxes h3:hover{
+  color: #1dc5ce;
+  transition: 0.3s;
+  cursor: pointer;
+}
 @keyframes moveUpDown {
     0% {
         top: -90px;
