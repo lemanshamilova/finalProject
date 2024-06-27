@@ -23,14 +23,14 @@ const ProductPage = () => {
       <div className="background">
         <div className="container">
           <div className="center">
-            <h1>MAĞAZA </h1>
+            <h1>SHOP </h1>
             <div className="flex">
               <div className="home">
                 <AiFillHome />
               </div>
-              <span>Ev</span>
+              <span>Home</span>
               <FaChevronCircleRight />
-              <span>Mağaza </span>
+              <span>Shop </span>
             </div>
           </div>
         </div>

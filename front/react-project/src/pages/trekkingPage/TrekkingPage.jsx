@@ -13,7 +13,7 @@ import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import faqImg from '../../assets/images/faq-image-1.svg'
+import faqImg from "../../assets/images/faq-image-1.svg";
 const TrekkingPage = () => {
   // const trekkings = useSelector((state) => state.trekkings.trekkings);
   // const dispatch = useDispatch();
@@ -32,7 +32,7 @@ const TrekkingPage = () => {
               <div className="home">
                 <AiFillHome />
               </div>
-              <span>Ev</span>
+              <span>Home</span>
               <FaChevronCircleRight />
               <span>Trekking</span>
             </div>
@@ -43,19 +43,18 @@ const TrekkingPage = () => {
       <div className="container">
         <section>
           <div className="head-Trekking">
-            <h1>Trekker ilə sizin üçün ən yaxşı treklər</h1>
+            <h1>Best Treks for you with Trekker</h1>
             <p>
-              2014-cü ildən bəri biz hər yaşda olan 500.000-dən çox insana
-              həyatlarının ən yaxşı açıq hava təcrübəsindən zövq almağa kömək
-              etmişik. İstər bir günlük, istərsə də iki həftəlik tətil, evə
-              yaxın və ya xarici ölkəyə.
+              Since 2014, we’ve helped more than 500,000 people of all ages
+              enjoy the best outdoor experience of their lives. Whether it’s for
+              one day or a two-week vacation, close to home or a foreign land
             </p>
             <div className="forFilter">
-              <button>Bütün Növlər</button>
-              <button>Asan Orta</button>
-              <button>Orta</button>
-              <button>Orta Çətin</button>
-              <button>Çətin</button>
+              <button>All Types </button>
+              <button>Easy Moderate</button>
+              <button>Moderate</button>
+              <button>Moderate Difficult</button>
+              <button>Difficult</button>
             </div>
           </div>
         </section>
@@ -84,7 +83,7 @@ const TrekkingPage = () => {
                 }}
                 className="details"
               >
-                Təfərrüatlara baxın{" "}
+                View Details{" "}
                 <img
                   style={{ width: "30px", height: "30px" }}
                   src={mountains}
@@ -94,77 +93,116 @@ const TrekkingPage = () => {
           ))}
         </div>
         <div className="heading-aboutTrekking">
-          <h1>Bəzi Vacib Cavab Alın</h1>
+          <h1>Get Some Important Answer</h1>
         </div>
         <div className="aboutTrekking">
-          <div style={{ maxWidth: "550px"}}>
+          <div style={{ maxWidth: "550px" }}>
             <Accordion>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon style={{backgroundColor:"#1dc5ce",padding:"5px",borderRadius:"50%",fontSize:"29px",color:"white"}} />}
+                expandIcon={
+                  <ExpandMoreIcon
+                    style={{
+                      backgroundColor: "#1dc5ce",
+                      padding: "5px",
+                      borderRadius: "50%",
+                      fontSize: "29px",
+                      color: "white",
+                    }}
+                  />
+                }
                 aria-controls="panel1-content"
                 id="panel1-header"
-                style={{padding:"20px",fontSize:"20px",fontWeight:"600" }}
+                style={{ padding: "20px", fontSize: "20px", fontWeight: "600" }}
               >
-                Trekking nədir?
-              </AccordionSummary >
+                What is Trekking?
+              </AccordionSummary>
               <AccordionDetails>
-                Trekkinqin əsas faydalarından biri fiziki sağlamlığınızı hədsiz
-                dərəcədə yaxşılaşdırmaqdır. Cığırda bir neçə saat sərf etmək,
-                daşların ətrafında dırmaşmaq, qayalarla tullanmaq və təpələrə
-                qalxmaq bütün bədəninizə məşq edir, gücünüzü, çevikliyinizi və
-                kardiyo fitnessinizi artırır.
+                One of the major benefits of trekking is that it improves your
+                physical health immensely. Spending multiple hours on the trail,
+                climbing around boulders, rock hopping and ascending hills gives
+                your whole body a workout, improving your strength, agility and
+                cardio fitness.
               </AccordionDetails>
             </Accordion>
             <Accordion>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon style={{backgroundColor:"#1dc5ce",padding:"5px",borderRadius:"50%",fontSize:"29px",color:"white"}}/>}
+                expandIcon={
+                  <ExpandMoreIcon
+                    style={{
+                      backgroundColor: "#1dc5ce",
+                      padding: "5px",
+                      borderRadius: "50%",
+                      fontSize: "29px",
+                      color: "white",
+                    }}
+                  />
+                }
                 aria-controls="panel2-content"
                 id="panel2-header"
-                style={{padding:"20px",fontSize:"20px",fontWeight:"600" }}
+                style={{ padding: "20px", fontSize: "20px", fontWeight: "600" }}
               >
-                Mənə nə lazımdır?
+               What do I need to carry?
               </AccordionSummary>
               <AccordionDetails>
-                Trekkinqin əsas faydalarından biri fiziki sağlamlığınızı hədsiz
-                dərəcədə yaxşılaşdırmaqdır. Cığırda bir neçə saat sərf etmək,
-                daşların ətrafında dırmaşmaq, qayalarla tullanmaq və təpələrə
-                qalxmaq bütün bədəninizə məşq edir, gücünüzü, çevikliyinizi və
-                kardiyo fitnessinizi artırır.
+                One of the major benefits of trekking is that it improves your
+                physical health immensely. Spending multiple hours on the trail,
+                climbing around boulders, rock hopping and ascending hills gives
+                your whole body a workout, improving your strength, agility and
+                cardio fitness.
               </AccordionDetails>
             </Accordion>
             <Accordion defaultExpanded>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon style={{backgroundColor:"#1dc5ce",padding:"5px",borderRadius:"50%",fontSize:"29px",color:"white"}}/>}
+                expandIcon={
+                  <ExpandMoreIcon
+                    style={{
+                      backgroundColor: "#1dc5ce",
+                      padding: "5px",
+                      borderRadius: "50%",
+                      fontSize: "29px",
+                      color: "white",
+                    }}
+                  />
+                }
                 aria-controls="panel3-content"
                 id="panel3-header"
-                style={{padding:"20px",fontSize:"20px",fontWeight:"600" }}
+                style={{ padding: "20px", fontSize: "20px", fontWeight: "600" }}
               >
-                Hündürlüklə bağlı nə dərəcədə narahat olmalıyam?
+             How concerned should I be about the altitude?
               </AccordionSummary>
               <AccordionDetails>
-              Trekkinqin əsas faydalarından biri fiziki sağlamlığınızı hədsiz
-                dərəcədə yaxşılaşdırmaqdır. Cığırda bir neçə saat sərf etmək,
-                daşların ətrafında dırmaşmaq, qayalarla tullanmaq və təpələrə
-                qalxmaq bütün bədəninizə məşq edir, gücünüzü, çevikliyinizi və
-                kardiyo fitnessinizi artırır.
+                One of the major benefits of trekking is that it improves your
+                physical health immensely. Spending multiple hours on the trail,
+                climbing around boulders, rock hopping and ascending hills gives
+                your whole body a workout, improving your strength, agility and
+                cardio fitness.
               </AccordionDetails>
-            
             </Accordion>
             <Accordion>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon style={{backgroundColor:"#1dc5ce",padding:"5px",borderRadius:"50%",fontSize:"29px",color:"white"}}/>}
+                expandIcon={
+                  <ExpandMoreIcon
+                    style={{
+                      backgroundColor: "#1dc5ce",
+                      padding: "5px",
+                      borderRadius: "50%",
+                      fontSize: "29px",
+                      color: "white",
+                    }}
+                  />
+                }
                 aria-controls="panel1-content"
                 id="panel1-header"
-                style={{padding:"20px",fontSize:"20px",fontWeight:"600" }}
+                style={{ padding: "20px", fontSize: "20px", fontWeight: "600" }}
               >
-               Gəzinti zamanı nə yeyib-içirik?
+              What do we eat and drink while on trek?
               </AccordionSummary>
               <AccordionDetails>
-                Trekkinqin əsas faydalarından biri fiziki sağlamlığınızı hədsiz
-                dərəcədə yaxşılaşdırmaqdır. Cığırda bir neçə saat sərf etmək,
-                daşların ətrafında dırmaşmaq, qayalarla tullanmaq və təpələrə
-                qalxmaq bütün bədəninizə məşq edir, gücünüzü, çevikliyinizi və
-                kardiyo fitnessinizi artırır.
+                One of the major benefits of trekking is that it improves your
+                physical health immensely. Spending multiple hours on the trail,
+                climbing around boulders, rock hopping and ascending hills gives
+                your whole body a workout, improving your strength, agility and
+                cardio fitness.
               </AccordionDetails>
             </Accordion>
           </div>

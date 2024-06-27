@@ -16,28 +16,39 @@ const Navbar = () => {
            <div> <img src={logo} /></div>
            <ul>
             <li>
-                <NavLink to={'/'}>HOME</NavLink>
+                <NavLink to='/' style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })} >HOME</NavLink>
             </li>
             <li>
-                <NavLink >ABOUT US</NavLink>
+                <NavLink to={"/about"}  style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })}>ABOUT US</NavLink>
             </li>
             <li>
-                <NavLink to={'/products'}>SHOP</NavLink>
+                <NavLink to='/products'  style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })} >SHOP</NavLink>
             </li>
             <li>
-                <NavLink >DESTINATIONS</NavLink>
+                <NavLink to={"/destination"}  style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })}>DESTINATIONS</NavLink>
             </li>
             <li>
-                <NavLink  to={'/trekkings'}>TREKKING</NavLink>
+                <NavLink  to='/trekkings'  style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })}>TREKKING</NavLink>
             </li>
             <li>
-                <NavLink >PAGES</NavLink>
+                <NavLink to={"/news"}  style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })} >NEWS</NavLink>
             </li>
             <li>
-                <NavLink >NEWS</NavLink>
-            </li>
-            <li>
-                <NavLink >CONTACT</NavLink>
+                <NavLink to={"/contact"} style={({isActive})=>({
+                  color: isActive ? '#1dc5ce' : 'black'
+                })}>CONTACT</NavLink>
             </li>
             
            </ul>

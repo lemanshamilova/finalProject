@@ -1,73 +1,175 @@
 .registerPage {
-    background-image: url("https://themeim.com/demo/treker/images/background/newsletter-bg.png");
-    height: 100vh;
-    background-position: center;
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .welcome {
-    text-align: center;
-    font-size: 50px;
+  background-image: url("https://themeim.com/demo/treker/images/background/newsletter-bg.png");
+  height: 100vh;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome {
+  text-align: center;
+  font-size: 50px;
   padding: 40px 0px;
-  
-  }
-  .total-Box {
+}
+.total-Box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rightSide {
+  background-color: #f3f7fa;
+  padding: 40px;
+  border: 1px solid #1dc5ce;
+  box-shadow: rgba(49, 51, 54, 0.2) 0px 8px 24px;
+  // height: 500px;
+
+  form {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  
-  
-   
-  }
-  .rightSide {
-    background-color: #f3f7fa;
-    padding: 50px;
-    border: 1px solid #1dc5ce;
-    box-shadow: rgba(49, 51, 54, 0.2) 0px 8px 24px;
-    height: 500px;
-    
-    
-  
-  
-    form {
-      display: flex;
-      flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    align-items: start;
+    color: black;
+    gap: 10px;
+
+    input {
+      width: 400px;
       font-size: 16px;
-      color: black;
-      gap: 15px;
-    
-  
-      input {
-        width: 400px;
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid gray;
-       
-      }
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
     }
   }
-  .registerBtn {
-    padding: 10px 25px;
+}
+.registerBtn {
+  padding: 10px 25px;
   font-size: 16px;
   border-radius: 10px;
-  background-color:#1dc5ce;
+  background-color: #1dc5ce;
   color: white;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.leftSide {
+  img {
+    height: 500px;
   }
-  .leftSide {
-  
-    img {
-  height: 500px;
+}
+.returnHome {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 
+  color: #1dc5ce;
+  p {
+    color: black;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .registerPage{
+    .RegisterBox{
+      .total-Box{
+        .rightSide{
+          form{
+            input{
+              max-width: 260px;
+            }
+            .registerBtn {
+              padding: 10px;
+              font-size: 16px;
+              border-radius: 10px;
+              background-color: #1b1a1c;
+              color: white;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .leftSide {
   
+          img {
+        height: 500px;
+        width: 400px;
+          
+        
+        
+          }
+        }
+      }
+    }
   
+  }
+  }
+  @media only screen and (max-width: 950px){
+    .registerPage{
+      .RegisterBox{
+        .total-Box{
+          .rightSide{
+            form{
+              
+              .registerBtn {
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 10px;
+                background-color: #1b1a1c;
+                color: white;
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+          .leftSide {
+    
+            img {
+          display: none;
+            
+          
+          
+            }
+          }
+        }
+      }
+    
     }
   }
-  
+  @media only screen and (max-width: 598px){
+    .registerPage{
+      .RegisterBox{
+        .total-Box{
+          .rightSide{
+            width: 300px;
+            form{
+              input{
+                width: 200px;
+              }
+              
+              .registerBtn {
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 10px;
+                background-color: #1b1a1c;
+                color: white;
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+          .leftSide {
+    
+            img {
+          display: none;
+            
+          
+          
+            }
+          }
+        }
+      }
+    
+    }
+  }

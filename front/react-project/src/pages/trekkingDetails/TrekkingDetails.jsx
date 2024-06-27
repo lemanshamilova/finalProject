@@ -120,7 +120,7 @@ const TrekkingDetails = () => {
               </div>
             </div>
           ))}
-          <div className="aboutTrekking">
+          <div className="aboutTrekkings">
            <div className="aboutTrekking_box">
            <h1>Haqqinda</h1>
             <p>

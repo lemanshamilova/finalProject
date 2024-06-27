@@ -10,6 +10,8 @@ import Register from "./pages/register/Register";
 import TrekkingPage from "./pages/trekkingPage/TrekkingPage";
 import ProductPage from "./pages/productPage/ProductPage";
 import Footer from "./components/footer/Footer";
+import Destinations from "./pages/destinationsPage/Destinations";
+import NewsPage from "./pages/newsPage/NewsPage";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function LayoutWithNavbar() {
         <Route path="/" element={<Home />} />
         <Route path="/trekkings" element={<TrekkingPage />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path="/destination" element={<Destinations />} />
+        <Route path="/news" element={<NewsPage />} />
         <Route path="/products/:productId" element={<ProductDetails />} />
         <Route path="/trekkings/:trekkingId" element={<TrekkingDetails />} />
       </Routes>

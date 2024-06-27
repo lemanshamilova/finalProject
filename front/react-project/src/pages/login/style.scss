@@ -22,9 +22,10 @@ padding: 40px 0px;
 }
 .rightSide {
   background-color: #f3f7fa;
-  padding: 50px;
+  padding: 40px;
   border: 1px solid #1dc5ce;
-  height: 500px;
+  box-shadow: rgba(49, 51, 54, 0.2) 0px 8px 24px;
+  // height: 500px;
   
   
 
@@ -35,7 +36,7 @@ padding: 40px 0px;
     align-items: start;
     font-size: 16px;
     color: black;
-    gap: 15px;
+    gap: 10px;
   
   
 
