@@ -3,10 +3,7 @@
 // import ProductReducer from '../slices/ProductSlice'
 
 // export const store = configureStore({
-//   reducer: {
-//     trekkings: TrekkingReducer,
-//     products:ProductReducer
-//   },
+
 // })
 
 import { configureStore } from "@reduxjs/toolkit";
@@ -22,6 +19,8 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import state from "../slices/state";
+import TrekkingReducer from '../slices/TrekkingSlice'
+import ProductReducer from '../slices/ProductSlice'
 
 const persistConfig = {
   key: "root",
@@ -32,7 +31,11 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, state);
 
 export const store = configureStore({
-  reducer: persistedReducer,
+  reducer: {
+    persistedReducer,
+      trekkings: TrekkingReducer,
+      products:ProductReducer
+    },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
